@@ -1,4 +1,9 @@
+import 'package:biofoundry_website/LandingPage/LandingPage.dart';
 import 'package:flutter/material.dart';
+import 'package:biofoundry_website/AboutUs/AboutUs.dart';
+import 'package:biofoundry_website/main.dart';
+import 'package:biofoundry_website/References/References.dart';
+import 'package:biofoundry_website/RequestOrder/RequestOrder.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -26,7 +31,10 @@ class DesktopNavbar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             MaterialButton(
-              onPressed:(){},
+              onPressed:(){
+                Route route = MaterialPageRoute(builder: (context)=> MyHomePage());
+                Navigator.push(context, route);
+              },
               child: Text(
               "HMC Biofoundry", 
               style: TextStyle(
@@ -36,21 +44,30 @@ class DesktopNavbar extends StatelessWidget {
               Row(
                 children: <Widget>[
                   MaterialButton(
-                    onPressed:(){},
+                    onPressed:(){
+                      Route route = MaterialPageRoute(builder: (context)=> AboutUs());
+                      Navigator.push(context, route);
+                    },
                     child: Text("About Us",
                       style: TextStyle(color: Colors.white),
                       ),
                   ),
                   SizedBox(width:30,),
                   MaterialButton(
-                    onPressed: (){},
+                    onPressed: (){
+                      Route route = MaterialPageRoute(builder: (context)=> RequestOrder());
+                      Navigator.push(context, route);
+                    },
                     child:Text("Request Order",
                     style: TextStyle(color: Colors.white),
                     ),
                   ),
                   SizedBox(width:30,),
                   MaterialButton(
-                    onPressed: (){},
+                    onPressed: (){
+                      Route route = MaterialPageRoute(builder: (context)=> References());
+                      Navigator.push(context, route);
+                    },
                     child: Text("Refereces",
                     style: TextStyle(color: Colors.white),),
                   ),
@@ -59,7 +76,10 @@ class DesktopNavbar extends StatelessWidget {
                     color: Colors.green,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                      onPressed:(){},
+                      onPressed:(){
+                        Route route = MaterialPageRoute(builder: (context)=> RequestOrder());
+                        Navigator.push(context, route);
+                      },
                       child: Text(
                         "Get Started",
                         style: TextStyle(color: Colors.white)
@@ -76,42 +96,51 @@ class DesktopNavbar extends StatelessWidget {
   
 class MobileNavbar extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+    Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical:20, horizontal:40),
       child: Container(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              MaterialButton(
-                onPressed: (){},
-                child: Text(
-                "HMC Biofoundry", 
-                style: TextStyle(
-                  fontWeight: FontWeight.bold, color: Colors.white, fontSize: 30),
-                ),
+          children: <Widget>[
+            MaterialButton(
+              onPressed:(){
+                Route route = MaterialPageRoute(builder: (context)=> MyHomePage());
+                Navigator.push(context, route);
+              },
+              child: Text(
+              "HMC Biofoundry", 
+              style: TextStyle(
+                fontWeight: FontWeight.bold, color: Colors.white, fontSize: 30),
               ),
-                Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      MaterialButton(
-                    onPressed:(){},
+              ),
+              Row(
+                children: <Widget>[
+                  MaterialButton(
+                    onPressed:(){
+                      Route route = MaterialPageRoute(builder: (context)=> AboutUs());
+                      Navigator.push(context, route);
+                    },
                     child: Text("About Us",
                       style: TextStyle(color: Colors.white),
                       ),
                   ),
                   SizedBox(width:30,),
                   MaterialButton(
-                    onPressed: (){},
+                    onPressed: (){
+                      Route route = MaterialPageRoute(builder: (context)=> RequestOrder());
+                      Navigator.push(context, route);
+                    },
                     child:Text("Request Order",
                     style: TextStyle(color: Colors.white),
                     ),
                   ),
                   SizedBox(width:30,),
                   MaterialButton(
-                    onPressed: (){},
+                    onPressed: (){
+                      Route route = MaterialPageRoute(builder: (context)=> References());
+                      Navigator.push(context, route);
+                    },
                     child: Text("Refereces",
                     style: TextStyle(color: Colors.white),),
                   ),
@@ -120,17 +149,19 @@ class MobileNavbar extends StatelessWidget {
                     color: Colors.green,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                      onPressed:(){},
+                      onPressed:(){
+                        Route route = MaterialPageRoute(builder: (context)=> RequestOrder());
+                        Navigator.push(context, route);
+                      },
                       child: Text(
                         "Get Started",
                         style: TextStyle(color: Colors.white)
-                        ),
-                      )
-                    ],
                   ),
-                )
-            ]
-        )
+                  )
+                ],
+              )
+          ],
+        ),
       ),
     );
   }

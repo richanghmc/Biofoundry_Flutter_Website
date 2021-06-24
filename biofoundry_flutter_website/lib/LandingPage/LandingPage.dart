@@ -8,11 +8,13 @@ class LandingPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("Build your \nCustom Plasmid", style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 40.0,
-              color: Colors.white
-            ),),
+            Text("Build your \nCustom Plasmid", 
+                style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 40.0,
+                color: Colors.white
+                  ),
+                ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Text("Give us any sequence of DNA you want in a plasmid and we will build it for you.",
