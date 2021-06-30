@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.0.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -48,6 +49,8 @@ flutter:
     - assets/images/plasmid.png
     - assets/images/pipette.png
     - assets/images/plasmid2.0.png
+    - assets/images/Olinlab.png
+    - assets/images/Olinlab2.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
