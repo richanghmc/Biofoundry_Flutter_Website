@@ -4,6 +4,8 @@ import 'package:biofoundry_website/AboutUs/AboutUs.dart';
 import 'package:biofoundry_website/main.dart';
 import 'package:biofoundry_website/References/References.dart';
 import 'package:biofoundry_website/RequestOrder/RequestOrder.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class Navbar extends StatelessWidget {
   @override
@@ -77,8 +79,7 @@ class DesktopNavbar extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
                       onPressed:(){
-                        Route route = MaterialPageRoute(builder: (context)=> RequestOrder());
-                        Navigator.push(context, route);
+                        launch('https://docs.google.com/forms/d/e/1FAIpQLSe1LUmbCEEkIa-6NHBge323pzpWT01MZh3r0xA4KWfBCi_eBg/viewform?usp=sf_link');
                       },
                       child: Text(
                         "Get Started",

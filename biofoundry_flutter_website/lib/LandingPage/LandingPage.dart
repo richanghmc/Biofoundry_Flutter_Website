@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LandingPage extends StatelessWidget {
   List<Widget> pageChildren(double width){
@@ -28,7 +29,9 @@ class LandingPage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),
-                onPressed: (){},
+                onPressed: (){
+                  launch('https://docs.google.com/forms/d/e/1FAIpQLSe1LUmbCEEkIa-6NHBge323pzpWT01MZh3r0xA4KWfBCi_eBg/viewform?usp=sf_link');
+                },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
                   child: Text(

@@ -17,13 +17,16 @@ class RequestOrder extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Navbar(),
-            Text("Please fill out the google form to input your desired sequence.", 
-                style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 40.0,
-                color: Colors.white
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20),
+              child: Text("To request an order, all you need to do is upload your desired sequence onto the google form that will pop up when you press the ‘Get Started’ button.", 
+                  style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40.0,
+                  color: Colors.white
+                    ),
                   ),
-                ),
+            ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 child: MaterialButton(
