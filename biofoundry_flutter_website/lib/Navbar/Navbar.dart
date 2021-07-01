@@ -1,4 +1,3 @@
-import 'package:biofoundry_website/LandingPage/LandingPage.dart';
 import 'package:flutter/material.dart';
 import 'package:biofoundry_website/AboutUs/AboutUs.dart';
 import 'package:biofoundry_website/main.dart';

@@ -46,8 +46,6 @@ class LandingPage extends StatelessWidget {
       Image.asset(
         "assets/images/plasmid.png",
         width: width,
-      
-        fit: BoxFit.scaleDown
         )
     ];
   }
