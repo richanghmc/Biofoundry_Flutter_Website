@@ -69,7 +69,7 @@ class DesktopNavbar extends StatelessWidget {
                       Route route = MaterialPageRoute(builder: (context)=> References());
                       Navigator.push(context, route);
                     },
-                    child: Text("Refereces",
+                    child: Text("References",
                     style: TextStyle(color: Colors.white),),
                   ),
                   SizedBox(width:30),
