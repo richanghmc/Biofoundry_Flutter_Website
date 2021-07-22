@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:biofoundry_website/Navbar/Navbar.dart';
-// import 'package:biofoundry_website/LandingPage/LandingPage.dart';
 
 class AboutUs extends StatelessWidget {
   @override

@@ -3,6 +3,7 @@ import 'package:biofoundry_website/AboutUs/AboutUs.dart';
 import 'package:biofoundry_website/main.dart';
 import 'package:biofoundry_website/References/References.dart';
 import 'package:biofoundry_website/RequestOrder/RequestOrder.dart';
+import 'package:biofoundry_website/ContactUs/ContactUs.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
@@ -74,14 +75,12 @@ class DesktopNavbar extends StatelessWidget {
                   ),
                   SizedBox(width:30),
                   MaterialButton(
-                    color: Colors.green,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
                       onPressed:(){
-                        launch('https://docs.google.com/forms/d/e/1FAIpQLSe1LUmbCEEkIa-6NHBge323pzpWT01MZh3r0xA4KWfBCi_eBg/viewform?usp=sf_link');
+                        Route route = MaterialPageRoute(builder: (context)=> ContactUs());
+                        Navigator.push(context, route);
                       },
                       child: Text(
-                        "Get Started",
+                        "Contact Us",
                         style: TextStyle(color: Colors.white)
                   ),
                   )
@@ -146,15 +145,12 @@ class MobileNavbar extends StatelessWidget {
                   ),
                   SizedBox(width:30),
                   MaterialButton(
-                    color: Colors.green,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
                       onPressed:(){
-                        Route route = MaterialPageRoute(builder: (context)=> RequestOrder());
+                        Route route = MaterialPageRoute(builder: (context)=> ContactUs());
                         Navigator.push(context, route);
                       },
                       child: Text(
-                        "Get Started",
+                        "Contact Us",
                         style: TextStyle(color: Colors.white)
                   ),
                   )
