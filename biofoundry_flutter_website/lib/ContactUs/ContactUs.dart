@@ -21,12 +21,14 @@ class ContactUs extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Navbar(),
+              SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                 child: Row(
                   children: [
                     Text("Follow our Instagram!",
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                        style: TextStyle(fontSize: 40, color: Colors.white)),
                     SizedBox(width: 15),
                     MaterialButton(
                         color: Colors.lightBlue,
@@ -39,36 +41,43 @@ class ContactUs extends StatelessWidget {
                         },
                         child: Text(
                           "@biomakerspacehmc",
-                          style: TextStyle(fontSize: 15, color: Colors.white),
+                          style: TextStyle(fontSize: 35, color: Colors.white),
                         )),
-                        SizedBox(width:25),
-                    Image.asset("assets/images/instagramlogo.png",
-                    width: 50,
-                    height: 50)
+                    SizedBox(width: 25),
                   ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                 child: Row(
                   children: [
-                    Text("Visit our website!", style: TextStyle(fontSize: 20, color: Colors.white)),
+                    Text("Visit our website!",
+                        style: TextStyle(fontSize: 40, color: Colors.white)),
                     SizedBox(width: 15),
                     MaterialButton(
-                          color: Colors.lightBlue,
-                          shape: RoundedRectangleBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20.0))),
-                          onPressed: () {
-                            launch(
-                                "https://biomakerspace.com/");
-                          },
-                          child: Text("biomakerspace.com",
-                          style: TextStyle(fontSize: 15, color: Colors.white))
-                    )
+                        color: Colors.lightBlue,
+                        shape: RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20.0))),
+                        onPressed: () {
+                          launch("https://biomakerspace.com/");
+                        },
+                        child: Text("biomakerspace.com",
+                            style:
+                                TextStyle(fontSize: 35, color: Colors.white)))
                   ],
                 ),
-              )
+              ),
+              SizedBox(height: 50),
+              Text("Questions?",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 50, color: Colors.white)),
+              SizedBox(height: 10),
+              SelectableText("Email us at hmc-biomakerspace-l@g.hmc.edu",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 40, color: Colors.white),
+                  onTap: () => launch("mailto:hmc-biomakerspace-l@g.hmc.edu")),
             ],
           )),
     );

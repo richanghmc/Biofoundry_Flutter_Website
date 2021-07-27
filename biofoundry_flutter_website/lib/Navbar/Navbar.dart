@@ -4,8 +4,6 @@ import 'package:biofoundry_website/main.dart';
 import 'package:biofoundry_website/References/References.dart';
 import 'package:biofoundry_website/RequestOrder/RequestOrder.dart';
 import 'package:biofoundry_website/ContactUs/ContactUs.dart';
-import 'package:url_launcher/url_launcher.dart';
-
 
 class Navbar extends StatelessWidget {
   @override

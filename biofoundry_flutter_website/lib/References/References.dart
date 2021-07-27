@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:biofoundry_website/Navbar/Navbar.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class References extends StatelessWidget {
   @override
@@ -35,6 +36,9 @@ class References extends StatelessWidget {
                   ),
                 ),
               ),
+              SelectableText("https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0016765", style: TextStyle(fontSize: 18, color: Colors.white54),
+              onTap: () => launch("https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0016765"),),
+              SizedBox(height: 35),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 child: Text("Fast Cloning Paper", 
@@ -53,7 +57,9 @@ class References extends StatelessWidget {
                   color: Colors.white
                   ),
                 ),
-              )
+              ),
+              SelectableText("https://bmcbiotechnol.biomedcentral.com/articles/10.1186/1472-6750-11-92", style: TextStyle(fontSize: 18, color: Colors.white54),
+              onTap: () => launch("https://bmcbiotechnol.biomedcentral.com/articles/10.1186/1472-6750-11-92"),)
           ],
         ),
       ),

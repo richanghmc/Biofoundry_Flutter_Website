@@ -21,14 +21,38 @@ class AboutUs extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Navbar(),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-              child: Text(
-                "The PolymerSpace, also known as the HMC BioMakerspace, is a student-run biology laboratory funded by the Shanahan Grant and the Office of Community Engagement at Harvey Mudd College (HMC). We provide our members from the Claremont Colleges with access to bench space, reagents, equipment, and materials to conduct genetic engineering research as well as individual funding for other types of biology projects. Our members aim to push the boundaries of genetic engineering and to expose the field to unconventional mindsets with their interdisciplinary expertise. ",
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
+            Row(
+              children: <Widget>[
+                Column(
+                  children: [
+                    Container(
+                      alignment: Alignment.centerLeft,
+                      width: 300,
+                      child: Text(
+                        "Who we are",
+                        style: TextStyle(fontSize: 35.0, color: Colors.white),
+                      ),
+                    ),
+                    Container(
+                      alignment: Alignment.centerLeft,
+                      height: 350,
+                      width: 650,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20),
+                        child: Text(
+                          "The PolymerSpace, also known as the HMC BioMakerspace, is a student-run biology laboratory funded by the Shanahan Grant and the Office of Community Engagement at Harvey Mudd College (HMC). We provide our members from the Claremont Colleges with access to bench space, reagents, equipment, and materials to conduct genetic engineering research as well as individual funding for other types of biology projects. Our members aim to push the boundaries of genetic engineering and to expose the field to unconventional mindsets with their interdisciplinary expertise. ",
+                          style: TextStyle(fontSize: 20.0, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 60),
+                Image.asset("assets/images/Olinlab.png",
+                    width: 600, height: 600, alignment: Alignment.centerRight,)
+              ],
             ),
-            Image.asset("assets/images/Olinlab.png", fit: BoxFit.cover)
           ],
         ),
       ),
