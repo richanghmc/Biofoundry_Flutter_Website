@@ -50,7 +50,7 @@ class RequestOrder extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                               vertical: 20, horizontal: 20),
                           child: Text(
-                            "To request an order, all you need to do is upload your desired sequence onto the google form that will pop up when you press the ‘Get Started’ button.",
+                            "To request an order, all you need to do is upload your desired sequence onto the google form that will pop up when you press the ‘Request Order’ button.",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20.0,

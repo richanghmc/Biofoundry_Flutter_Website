@@ -22,6 +22,7 @@ class AboutUs extends StatelessWidget {
           children: <Widget>[
             Navbar(),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Column(
                   children: [
@@ -48,9 +49,11 @@ class AboutUs extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(width: 60),
-                Image.asset("assets/images/Olinlab.png",
-                    width: 600, height: 600, alignment: Alignment.centerRight,)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  child: Image.asset("assets/images/Olinlab.png",
+                      width: 600, height: 600, alignment: Alignment.centerRight,),
+                )
               ],
             ),
           ],
